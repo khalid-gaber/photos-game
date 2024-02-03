@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    background-image: url("img/img0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* cover */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10%;
+
+    /* //////////////////event listene\\\\\\\\\\\\ */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+nav {
+    display: inline-block;
+    flex-grow: 1;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-bottom: solid 1px transparent;
+    transition: all .5s;
+}
+
+nav a:hover {
+    border-bottom: solid 1px white;
+}
+
+li.material-symbols-outlined {
+    vertical-align: text-bottom;
+    scale: 1.2 1.5;
+    padding: 0 2px;
+    border-radius: 5px;
+    color: gray;
+    margin: 5px 0 0 25px;
+    transition: all .5s;
+}
+
+li.material-symbols-outlined:hover {
+    color: red;
+    cursor: pointer;
+}
+
+span.material-symbols-outlined {
+    color: red;
+    font-size: 48px;
+    scale: 1.5;
+}
+
+span.material-symbols-outlined:hover {
+    cursor: pointer;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* padding-top: 10px;
+    margin-bottom: 30px; */
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 10px;
+}
+
+.right h1 {
+    font-size: 4em;
+}
+
+.right button {
+    padding: 15px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: bold;
+    color: #111;
+    transition: all .5s;
+}
+
+.right button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.left {
+    flex: 1;
+}
+/* 550 */
+.cards {
+    height: 100%;
+    vertical-align: text-bottom;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    justify-content: start;
+    align-content: center;
+
+}
+
+.cards>div {
+    width: 230px;
+    height: 40%;
+    margin: 10px 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: normal;
+    box-shadow: 0 0px 10px 5px rgba(0, 0, 0, .7);
+    transition: all .5s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cards>div:hover {
+    box-shadow: 0 10px 10px 3px rgba(0, 0, 0, .7);
+    translate: 0 -10px;
+    cursor: pointer;
+}
+
+.card1 {
+    background-image: url('img/img1.jpg');
+}
+
+.card2 {
+    background-image: url('img/img2.jpg');
+}
+
+.card3 {
+    background-image: url('img/img3.jpg');
+}
+
+.card4 {
+    background-image: url('img/img4.jpg');
+}
+
+
+.far-left {
+    width: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="range"] {
+    width: 25vh;
+}
+
+.input>.material-symbols-outlined {
+    border-radius: 50%;
+    scale: 1.2;
+    margin-left: 20px;
+    color: gray;
+    transition: all .5s;
+}
+
+.input>.material-symbols-outlined:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+div.input {
+    position: absolute;
+    left: -160px;
+    top: 50%;
+    display: flex;
+    rotate: 90deg;
+    scale: 1.5;
+}
+
